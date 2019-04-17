@@ -31,11 +31,14 @@
 		//pre_r($result);
 		?>
 
+<a class="btn btn-primary" href="pesquisarCliente2.php" role="button">Pesquisar Cliente</a>
+		<h1 align="center"> Lista de Clientes</h1>
 
 		<div class="row just justify-content-center">
 			<table class="table">
 				<thead>
 					<tr>
+						<th>ID</th>
 						<th>Nome</th>
 						<th>CPF</th>
 						<th colspan="2">Action</th>
@@ -47,10 +50,11 @@
 			while ($row = $result->fetch_assoc()): ?>
 			<tr>
 				<tr>
+					<td><?php echo $row['id'];?></td>
 					<td><?php echo $row['nome'];?></td>
 					<td><?php echo $row['cpf'];?></td>
 					<td>
-						<a href="listarCliente.php?edit=<?php echo $row['id']; ?>"
+						<a href="editarCliente.php?edit=<?php echo $row['id']; ?>"
 							class="btn btn-info">Editar</a>
 						<a href="process.php?deletar=<?php echo $row['id']?>"	
 							class="btn btn-danger">Deletar</a>

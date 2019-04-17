@@ -1,0 +1,60 @@
+.centrado{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+.div-fora {
+  display: table-cell;
+  width: 350px;
+  height: 500px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.div-dentro {
+  display: inline-block;
+  width: 200px; height: 200px;
+}
+
+.telaitem{
+	height: 150px;
+	width: 150px;
+	display: block;
+}
+
+.form-cad{
+	width: 500px;
+	margin-top: 70px;
+}
+
+#form-qtd{
+	width: 60px;
+}
+
+
+#form-ncasa, #form-valor, #unidadeproduto{
+	width: 50px;
+}
+
+#form-nomerua{
+	width: 250px;
+}
+
+#btn-cad-prod{
+	text-align: right;
+}
+
+#valor-compra{
+	width: 90px;
+
+}
+
+.div-fora#ex{
+  height: 200px;
+  text-align: top;
+}
+
+  
